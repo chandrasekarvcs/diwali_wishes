@@ -29,6 +29,6 @@ $(document).ready(function(){
 </div>
 
 <span class='btnlink'><%= link_to 'Create Greeting!', form_path, class: 'btnlink1' %>&nbsp
-<a class='btnlink2'  href="whatsapp://send?text=Click on this link to view diwali wishes from <%= @name %> <%= request.protocol+request.host_with_port+request.fullpath %>" data-action="share/whatsapp/share">Share via Whatsapp</a><span>
+<a class='btnlink2'  href="whatsapp://send?text=Click on this link to view diwali wishes from '<%= request.protocol+request.host_with_port+request.fullpath %>' " data-action="share/whatsapp/share">Share via Whatsapp</a><span>
 
 <script src="/assets/application.js?body=1" type="text/javascript"></script>  
