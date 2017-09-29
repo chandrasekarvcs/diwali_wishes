@@ -69,9 +69,9 @@ canvas {
   background-color: #0079B9;
   border:none;
   color:white;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px;
   text-decoration: none;
-  padding:5px;
+  padding:10px;
   font-style: italic;
   font-size: 30px;
 }
@@ -79,9 +79,9 @@ canvas {
   background-color: #34af23;
   border:none;
   color:white;
-  border-radius: 0px 20px 20px 0px;
+  border-radius:20px;
   text-decoration: none;
-  padding:5px;
+  padding:10px;
   font-style: italic;
   font-size: 30px;
 }
