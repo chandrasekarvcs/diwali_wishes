@@ -1,0 +1,34 @@
+<script type="text/javascript">
+$(document).ready(function(){
+	var url = document.URL.split("?");
+
+	var abc = url[1].split("&");
+
+	var bcd = abc[0].split("=");
+    $("#write").text(bcd[1].replace(/[+]/g, " "));
+});
+</script>
+<!-- setup our canvas element -->
+<canvas id="canvas">
+  Canvas is not supported in your browser.
+</canvas>
+
+<div id="animate_text" style="top: 20%;">
+  WISH YOU AND YOUR FAMILY A VERY HAPPY DIWALI
+</div>
+
+<div id="animate_text" style="top: 45%;">
+  Your lovely friend
+  <br>
+  --<span style="display: inline-block;" id="write"><span>
+  
+</div>
+
+<div id="animate_text" style="top: 70%;">
+  Touch anywhere in screen
+</div>
+
+<span class='btnlink'><%= link_to 'Create Greeting!', form_path, class: 'btnlink1' %>&nbsp
+<a class='btnlink2'  href="whatsapp://send?text=Click on this link to view diwali wishes from <%= @name %> <%= request.protocol+request.host_with_port+request.fullpath %>" data-action="share/whatsapp/share">Share via Whatsapp</a><span>
+
+<script src="/assets/application.js?body=1" type="text/javascript"></script>  

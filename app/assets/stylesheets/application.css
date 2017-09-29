@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+  margin: 0;
+  text-align: center;
+}
+canvas {
+  cursor: crosshair;
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+#animate_text {color: #39f !important;}
+@-webkit-keyframes colours {
+  0%   {color: #e74c3c;}
+  15%  {color: violet;}
+  30%  {color:indigo;}
+  45%  {color: blue;}
+  60% {color: green;}
+  75% {color: orange;}
+  90% {color: purple;}
+  100% {color: #e74c3c;}
+}
+@keyframes colours {
+  0%   {color: #e74c3c;}
+  15%  {color: violet;}
+  30%  {color:indigo;}
+  45%  {color: blue;}
+  60% {color: green;}
+  75% {color: orange;}
+  90% {color: purple;}
+  100% {color: #e74c3c;}
+}
+#animate_text {
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: colours;
+  -webkit-animation-timing-function: ease;
+  position:absolute; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index:0; 
+  font-style: italic;
+  font-size: 40px;
+  background-color: transparent;
+  display:inline-block; 
+}
+.btnlink{
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index:0;
+  bottom: 5%;
+  position:absolute; 
+  display:inline-block; 
+}
+.btnlink1{
+  background-color: #0079B9;
+  border:none;
+  color:white;
+  border-radius: 20px 0px 0px 20px;
+  text-decoration: none;
+  padding:5px;
+  font-style: italic;
+  font-size: 30px;
+}
+.btnlink2{
+  background-color: #34af23;
+  border:none;
+  color:white;
+  border-radius: 0px 20px 20px 0px;
+  text-decoration: none;
+  padding:5px;
+  font-style: italic;
+  font-size: 30px;
+}
+.allPage{
+  background-color: black;
+  top:30%;
+}
+.errMsg{
+  color:red;
+}
+.txtName{
+  border-radius: 10px;
+  height: 60px;
+  width:60%;
+  background-color: white;
+  border:none;
+  text-align: center;
+  font-size: 40px;
+}
+.btnName{
+  border-radius: 10px;
+  height: 60px;
+  width:60%;
+  background-color: #0079B9;
+  border:none;
+  text-align: center;
+  font-size: 40px;
+  color:white;
+}
