@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function(){
     window.requestAnimFrame = ( function() {
   return window.requestAnimationFrame ||
           window.webkitRequestAnimationFrame ||
@@ -305,3 +306,4 @@
 
   // once the window loads, we are ready for some fireworks!
   window.onload = loop;
+});
