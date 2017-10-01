@@ -14,21 +14,21 @@ $(document).ready(function(){
 </canvas>
 
 <div id="animate_text" style="top: 15%;">
-  WISH YOU AND YOUR FAMILY A VERY HAPPY DIWALI
+  WISH YOU AND YOUR FAMILY A VERY <b>HAPPY DIWALI</b>
 </div>
 
 <div id="animate_text" style="top: 40%;">
   Your lovely friend
   <br>
-  --<span style="display: inline-block;" id="write"><span>
+  --<span style="display: inline-block; font-weight: bold;" id="write"><span>
   
 </div>
 
-<div id="animate_text" style="top: 50%;">
+<div id="animate_text" style="top: 60%;width:80%; margin-left: 10%;">
   Touch anywhere on the screen
 </div>
 
-<div class="btnlink" style="top:80%;">
+<div class="btnlink" style="top:70%;">
   <a href="../form" style="text-decoration: none;">
     <div class="btnlink1">
       Create your greeting!
@@ -37,7 +37,7 @@ $(document).ready(function(){
   <br>
   <br>
   <br>
-  <a style="text-decoration: none;" href="whatsapp://send?text=Click on this link to view DIWALI WISHES from your friend '<%= request.protocol+request.host_with_port+request.fullpath %>' \\n\\n\\n\n create your DIWAI greeting...!!!" data-action="share/whatsapp/share">
+  <a style="text-decoration: none;" href="whatsapp://send?text=Click on this link to view DIWALI WISHES from your friend '<%= request.protocol+request.host_with_port+request.fullpath %>' %0A%0A%0A create your DIWAI greeting...!!!" data-action="share/whatsapp/share">
     <div class="btnlink2">
       Share via Whatsapp
     </div>
