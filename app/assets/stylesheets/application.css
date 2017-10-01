@@ -58,31 +58,27 @@ canvas {
   display:inline-block; 
 }
 .btnlink{
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  z-index:0;
-  bottom: 5%;
-  position:absolute; 
-  display:inline-block; 
+  position: absolute;
+  top: 70%;
+  width:60%;
+  margin-left: 20%; 
 }
 .btnlink1{
+  color:white;
+  font-style: italic;
   background-color: #0079B9;
   border:none;
-  color:white;
   border-radius: 20px;
-  text-decoration: none;
   padding:10px;
-  font-style: italic;
   font-size: 30px;
 }
 .btnlink2{
+  color:white;
+  font-style: italic;
   background-color: #34af23;
   border:none;
-  color:white;
-  border-radius:20px;
-  text-decoration: none;
+  border-radius: 20px;
   padding:10px;
-  font-style: italic;
   font-size: 30px;
 }
 .allPage{

@@ -28,8 +28,21 @@ $(document).ready(function(){
   Touch anywhere on the screen
 </div>
 
-<span class='btnlink'><%= link_to 'Create Greeting!', form_path, class: 'btnlink1' %><br><br><br>
-<a class='btnlink2'  href="whatsapp://send?text=Click on this link to view durga pooja wishes from your friend '<%= request.protocol+request.host_with_port+request.fullpath %>' " data-action="share/whatsapp/share">Share via Whatsapp</a><span>
+<div class="btnlink">
+  <a href="../form" style="text-decoration: none;">
+    <div class="btnlink1">
+      Create your greeting!
+    </div>
+  </a> 
+  <br>
+  <br>
+  <br>
+  <a style="text-decoration: none;" href="whatsapp://send?text=Click on this link to view durga pooja wishes from your friend '<%= request.protocol+request.host_with_port+request.fullpath %>' " data-action="share/whatsapp/share">
+    <div class="btnlink2">
+      Share via Whatsapp
+    </div>
+  </a> 
+</div>
 
 <script src="/assets/application.js?body=1" type="text/javascript"></script>  
 <!-- Global Site Tag (gtag.js) - Google Analytics -->

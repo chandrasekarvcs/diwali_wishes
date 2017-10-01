@@ -24,3 +24,15 @@
 #   pool: 5
 #   timeout: 5000
 
+#uncomment this
+# default: &default
+#   adapter: postgresql
+#   pool: 5
+#   timeout: 5000
+  
+# development:
+#   <<: *default
+#   database: postgres1
+#   username: postgres
+#   password: mindfire
+#   host: localhost
