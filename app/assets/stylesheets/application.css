@@ -23,24 +23,24 @@ canvas {
 }
 #animate_text {color: #39f !important;}
 @-webkit-keyframes colours {
-  0%   {color: #e74c3c;}
+  0%   {color: #eb6e60;}
   15%  {color: violet;}
-  30%  {color:indigo;}
-  45%  {color: blue;}
-  60% {color: green;}
-  75% {color: orange;}
-  90% {color: purple;}
-  100% {color: #e74c3c;}
+  30%  {color:#b54dff;}
+  45%  {color: #6666ff;}
+  60% {color: #00e600;}
+  75% {color: #ffc14d;}
+  90% {color: #ff99ff;}
+  100% {color: #f1978e;}
 }
 @keyframes colours {
-  0%   {color: #e74c3c;}
+  0%   {color: #eb6e60;}
   15%  {color: violet;}
-  30%  {color:indigo;}
-  45%  {color: blue;}
-  60% {color: green;}
-  75% {color: orange;}
-  90% {color: purple;}
-  100% {color: #e74c3c;}
+  30%  {color:#b54dff;}
+  45%  {color: #6666ff;}
+  60% {color: #00e600;}
+  75% {color: #ffc14d;}
+  90% {color: #ff99ff;}
+  100% {color: #f1978e;}
 }
 #animate_text {
   -webkit-animation-direction: normal;
@@ -49,13 +49,16 @@ canvas {
   -webkit-animation-name: colours;
   -webkit-animation-timing-function: ease;
   position:absolute; 
-  left: 50%;
-  transform: translate(-50%, -50%); 
+  /*left: 50%;
+  transform: translate(-50%, -50%); */
+  width:60%;
+  margin-left: 20%; 
   z-index:0; 
   font-style: italic;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 50px;
   background-color: transparent;
-  display:inline-block; 
+   
 }
 .btnlink{
   position: absolute;
@@ -71,6 +74,7 @@ canvas {
   border-radius: 20px;
   padding:10px;
   font-size: 30px;
+  font-weight: bold;
 }
 .btnlink2{
   color:white;
@@ -80,6 +84,7 @@ canvas {
   border-radius: 20px;
   padding:10px;
   font-size: 30px;
+  font-weight: bold;
 }
 .allPage{
   background-color: black;
