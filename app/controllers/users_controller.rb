@@ -10,4 +10,7 @@ class UsersController < ApplicationController
   	c =  "whatsapp://send?text=_*'''Create%20your%20own%20greeting...!!!'''*_%0A%0A"
   	@d = c + a + b
   end
+
+  def live_in_design
+  end
 end

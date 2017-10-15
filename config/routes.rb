@@ -2,7 +2,8 @@ DiwaliWishes::Application.routes.draw do
   root to: 'users#display'
   match "/404" => "errors#error404", via: [ :get, :post, :patch, :delete ]
   get '/form', :to => 'users#form', :as => 'form'
-  get '/display', :to => 'users#display', :as => 'display' 
+  get '/display', :to => 'users#display', :as => 'display'
+  get '/live_in_design', :to => 'users#live_in_design', :as => 'live_in_design' 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
